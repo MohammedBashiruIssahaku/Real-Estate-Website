@@ -1,14 +1,20 @@
 import './App.css'
 import { Outlet } from 'react-router-dom'
+import NavBar from './Components/NavBar'
+
 
 function App() {
   
 
   return (
-    <>
-    <p className='text-blue-500'>Hello world</p>
-      <Outlet/>
-    </>
+      <div>
+         <NavBar/>
+         <Outlet/>
+      </div>
+
+      
+      
+    
   )
 }
 
