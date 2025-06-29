@@ -14,7 +14,7 @@ const Properties = () => {
   {
       async function fetchData()
       {
-          const url = "http://localhost:3000/properties";
+          const url = "/estate.json";
           const response = await fetch(url);
           const data = await response.json();
           setHomes(data);
